@@ -1,0 +1,52 @@
+		<!DOCTYPE html>
+		<!-- Main Bluetooth App HTML Index File-->
+		<html>
+			<head>
+				<meta charset="utf-8" />
+				<meta name="format-detection" content="telephone=no" />
+				<!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+				<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+				<link rel="stylesheet" type="text/css" href="css/index.css" />
+				<title>Bluetooth App</title>
+			</head>
+			<body>
+				<p id = "img_container">
+					<img id="logo" src="img/logo.png">
+					<br/>
+					<img id="phonegap" src="img/apache-cordova-phonegap.png">
+				</p>
+				<!--The following was not here before does it need to?
+				<div id="deviceready" class="blink">
+					<p class="event listening">Connecting to Device</p>
+					<p class="event received">Device is Ready</p>
+				</div>-->
+				<button onclick="enableBluetooth()">Enable Bluetooth</button>
+				<p id="appname" ><b>Bluetooth Messenger</b></p>
+					<button id="scan" type="button" onclick="scanForDevices()"disabled>Scan</button>
+					<select id="device-list">
+						<option id ="opt0" value="device1">No Bluetooth Devices Detected</option>
+						<option id ="opt1" value="device2"></option>
+						<option id ="opt2" value="device3"></option>
+						<option id ="opt3" value="device4"></option>
+						<option id ="opt4" value="device5"></option>
+						<option id ="opt5" value="device6"></option>
+						<option id ="opt6" value="device7"></option>
+						<option id ="opt7" value="device8"></option>
+						<option id ="opt8" value="device9"></option>
+						<option id ="opt9" value="device10"></option>
+					</select>
+				<p id="connection_status">Not Connected</p>
+				<button id="connect" type="button" onclick="connect()" disabled>Connect</button>
+				<input id="msgbox" type="text">	
+				<button id="sendmsg" type="button" onclick="sendmsg()" disabled>Send</button>
+				<p id="message_status"></p>
+				<script src="js/index.js"></script>
+			</body>
+		</html>
+		
+		
+		
+		
+	
+
+
